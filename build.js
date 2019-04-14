@@ -18,12 +18,13 @@ const prepend = (p, text) => p + '\n' + text
 
 const getLicense = () => readFileSync('./LICENSE', 'utf8')
   .split('\n')
-  .map(a => `// ${a}`)
+  .map(a => a.length > 0 ? `// ${a}` : '//')
   .join('\n')
 
 runner()
   .then(o => {
     o = removeFirstLine(o)
-    o = prepend(getLicense(), o)
-    console.log(o.slice(0, 400))
+    o = prepend(getLicense() + '\n', o)
+    writeFileSync('./exports.js', o, 'utf8')
+    console.log('Finished building exports')
   })
