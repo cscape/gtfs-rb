@@ -1,4 +1,7 @@
-# Node.js GTFS Realtime Bindings (gtfs-rb)
+# Node.js GTFS Realtime Bindings
+
+*This package is based on [Google’s older `gtfs-realtime-bindings`](https://www.npmjs.com/package/gtfs-realtime-bindings) 
+and is now supported by [Cyberscape](https://github.com/cscape)*
 
 This package provides JavaScript classes generated from the
 [GTFS Realtime](https://developers.google.com/transit/gtfs-realtime/) Protocol
@@ -10,11 +13,11 @@ JavaScript Protocol Buffer support.
 
 ## Install
 
-To use the `gtfs-realtime-bindings` classes in your own project, you need to
-first install our [Node.js npm package](https://www.npmjs.com/package/gtfs-realtime-bindings):
+To use the `gtfs-rb` classes in your own project, you need to
+first install our [Node.js npm package](https://www.npmjs.com/package/gtfs-rb):
 
 ```
-npm install gtfs-realtime-bindings
+npm install gtfs-rb
 ```
 
 ## Example Code
@@ -24,7 +27,7 @@ data feed from a particular URL, parsing it as a FeedMessage (the root type of
 the GTFS-realtime schema), and iterating over the results.
 
 ```javascript
-var GtfsRealtimeBindings = require('gtfs-realtime-bindings');
+var GtfsRealtimeBindings = require('gtfs-rb');
 var request = require('request');
 
 var requestSettings = {
@@ -49,6 +52,11 @@ from the
 [gtfs-realtime.proto](https://developers.google.com/transit/gtfs-realtime/gtfs-realtime-proto),
 check out the [protobuf.js project](https://github.com/dcodeIO/protobuf.js/wiki)
 which we use to handle our Protocol Buffer serialization.
+
+## Contributing
+
+Please feel free to open a [pull request](https://github.com/cscape/gtfs-rb) so we 
+can have more examples and better documentation on this project!
 
 ## LICENSE
 
