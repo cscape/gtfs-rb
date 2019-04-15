@@ -1,4 +1,4 @@
-# Node.js GTFS Realtime Bindings
+# Node.js GTFS Realtime Bindings (gtfs-rb)
 
 This package provides JavaScript classes generated from the
 [GTFS Realtime](https://developers.google.com/transit/gtfs-realtime/) Protocol
@@ -8,7 +8,7 @@ Buffer GTFS Realtime data feed into JavaScript objects.
 We use the [protobuf.js](https://github.com/protobufjs/protobuf.js) library for
 JavaScript Protocol Buffer support.
 
-## Add the Dependency
+## Install
 
 To use the `gtfs-realtime-bindings` classes in your own project, you need to
 first install our [Node.js npm package](https://www.npmjs.com/package/gtfs-realtime-bindings):
