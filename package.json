@@ -1,11 +1,19 @@
 {
-  "author": "Google Inc.",
   "name": "gtfs-rb",
   "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
-  "tags": [
-    "gtfs-realtime"
-  ],
-  "version": "0.5.2",
+  "version": "0.5.3",
+  "main": "exports.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">= 8.15.1"
+  },
+  "dependencies": {
+    "protobufjs": "~6.8.6"
+  },
+  "author": "Google Inc.",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/google/gtfs-realtime-bindings.git"
@@ -13,21 +21,7 @@
   "bugs": {
     "url": "https://github.com/google/gtfs-realtime-bindings/issues"
   },
-  "main": "gtfs-realtime.js",
-  "scripts": {
-    "test": "mocha test/*.js",
-    "buildProto": "pbjs -t static-module -w commonjs -o gtfs-realtime.js ./gtfs-realtime.proto"
-  },
-  "engines": {
-    "node": ">= 0.10.0"
-  },
-  "dependencies": {
-    "protobufjs": "~6.8.6"
-  },
-  "licenses": [
-    {
-      "type": "Apache 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
-    }
+  "tags": [
+    "gtfs-realtime", "gtfs", "gtfs-rt", "transit", "mobility", "gtfs-rb"
   ]
 }
