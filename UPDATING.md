@@ -1,26 +1,31 @@
-# How-To Update Bindings When gtfs-realtime.proto Changes
+# How to update bindings
 
-Regenerate the language binding source from gtfs-realtime.proto.
+You should generally only do this when the GTFS Realtime spec changes. This process will also create relevant bindings for any `.proto` protocol buffer spec if you replace the `gtfs-realtime.proto` file.
 
-```
-npm run buildProto
-```
+## Guide
 
-You might need to optionally `npm install` to install the protobuf package
-before building the proto.
+Make sure you have all dependencies installed
 
-Add the license header back to the generated source file.
-
-Test the generated code:
-
-```
-npm run test
+```bash
+npm install
 ```
 
-Update the version number in `package.json`.
+Regenerate the language binding source from gtfs-realtime.proto
+
+```bash
+npm build
+```
+
+Update the version number in `package.json`
+
+```json
+{
+  "version": "0.5.1"
+}
+```
 
 Publish the package to NPM:
 
-```
+```bash
 npm publish
 ```
