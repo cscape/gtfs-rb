@@ -1,7 +1,7 @@
 {
   "name": "gtfs-rb",
-  "description": "Javascript classes generated from the GTFS-realtime protocol buffer specification.",
-  "version": "0.5.7",
+  "description": "Generated JavaScript library based on the GTFS Realtime protocol buffer specification",
+  "version": "0.5.8",
   "main": "exports.js",
   "scripts": {
     "build": "node build.js"
@@ -21,15 +21,19 @@
     }
   },
   "author": "Cyberscape",
-  "license": "MIT",
+  "license": "(MIT OR Apache-2.0)",
+  "files": [
+    "exports.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/google/gtfs-realtime-bindings.git"
+    "url": "https://github.com/cscape/gtfs-rb.git"
   },
+  "homepage": "https://github.com/cscape/gtfs-rb#readme",
   "bugs": {
-    "url": "https://github.com/google/gtfs-realtime-bindings/issues"
+    "url": "https://github.com/cscape/gtfs-rb/issues"
   },
-  "tags": [
+  "keywords": [
     "gtfs-realtime",
     "gtfs",
     "gtfs-rt",
