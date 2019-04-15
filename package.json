@@ -12,8 +12,8 @@
   "dependencies": {
     "protobufjs": "~6.8.6"
   },
-  "author": "Google Inc.",
-  "license": "Apache-2.0",
+  "author": "Cyberscape",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/google/gtfs-realtime-bindings.git"
