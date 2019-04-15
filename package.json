@@ -1,7 +1,7 @@
 {
   "name": "gtfs-rb",
   "description": "Generated JavaScript library based on the GTFS Realtime protocol buffer specification",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "exports.js",
   "scripts": {
     "build": "node build.js"
@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run build && node bumpversion.js && git add package.json"
+      "pre-commit": "npm run build && node bumpversion.js && git add package.json exports.js exports.d.ts"
     }
   },
   "author": "Cyberscape",
