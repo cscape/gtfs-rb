@@ -1,7 +1,7 @@
 {
   "name": "gtfs-rb",
   "description": "Generated JavaScript library based on the GTFS Realtime protocol buffer specification",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "main": "exports.js",
   "scripts": {
     "build": "node build.js"
@@ -21,7 +21,7 @@
     }
   },
   "author": "Cyberscape",
-  "license": "(MIT OR Apache-2.0)",
+  "license": "MIT",
   "files": [
     "exports.js"
   ],
