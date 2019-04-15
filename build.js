@@ -25,6 +25,7 @@ runner()
   .then(o => {
     o = removeFirstLine(o)
     o = prepend(getLicense() + '\n', o)
+    o = prepend(`// THIS IS AN AUTO-GENERATED FILE, DO NOT MANUALLY MODIFY\n`, o)
     writeFileSync('./exports.js', o, 'utf8')
     console.log('Finished building exports')
   })
