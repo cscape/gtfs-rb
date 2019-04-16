@@ -22,30 +22,10 @@ npm install gtfs-rb
 
 ## Example Code
 
-The following Node.js code snippet demonstrates downloading a GTFS-realtime
-data feed from a particular URL, parsing it as a FeedMessage (the root type of
-the GTFS-realtime schema), and iterating over the results.
+See the [examples](https://github.com/cscape/gtfs-rb/blob/master/examples/)
 
-```javascript
-var GtfsRealtimeBindings = require('gtfs-rb');
-var request = require('request');
 
-var requestSettings = {
-  method: 'GET',
-  url: 'URL OF YOUR GTFS-REALTIME SOURCE GOES HERE',
-  encoding: null
-};
-request(requestSettings, function (error, response, body) {
-  if (!error && response.statusCode == 200) {
-    var feed = GtfsRealtimeBindings.FeedMessage.decode(body);
-    feed.entity.forEach(function(entity) {
-      if (entity.trip_update) {
-        console.log(entity.trip_update);
-      }
-    });
-  }
-});
-```
+## Note
 
 For more details on the naming conventions for the Javascript classes generated
 from the
