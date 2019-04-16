@@ -22,7 +22,7 @@ npm install gtfs-rb
 
 ## Example Code
 
-See the [examples](https://github.com/cscape/gtfs-rb/blob/master/examples/)
+See the [examples](https://github.com/cscape/gtfs-rb/tree/master/examples)
 
 
 ## Note
