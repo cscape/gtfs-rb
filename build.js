@@ -9,6 +9,7 @@ const EXPORTS_FULL = `${EXPORTS_PATH}.js`
 const args = [
   '--target', 'static-module',
   '--wrap', 'commonjs',
+  '--force-long', // use Long, always
   // '--out', './exports.js',
   './gtfs-realtime.proto'
 ]

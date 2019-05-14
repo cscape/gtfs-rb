@@ -144,7 +144,7 @@ export namespace transit_realtime {
         incrementality?: (transit_realtime.FeedHeader.Incrementality|null);
 
         /** FeedHeader timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (Long|null);
     }
 
     /** Represents a FeedHeader. */
@@ -163,7 +163,7 @@ export namespace transit_realtime {
         public incrementality: transit_realtime.FeedHeader.Incrementality;
 
         /** FeedHeader timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: Long;
 
         /**
          * Creates a new FeedHeader instance using the specified properties.
@@ -372,7 +372,7 @@ export namespace transit_realtime {
         stopTimeUpdate?: (transit_realtime.TripUpdate.IStopTimeUpdate[]|null);
 
         /** TripUpdate timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (Long|null);
 
         /** TripUpdate delay */
         delay?: (number|null);
@@ -397,7 +397,7 @@ export namespace transit_realtime {
         public stopTimeUpdate: transit_realtime.TripUpdate.IStopTimeUpdate[];
 
         /** TripUpdate timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: Long;
 
         /** TripUpdate delay. */
         public delay: number;
@@ -482,7 +482,7 @@ export namespace transit_realtime {
             delay?: (number|null);
 
             /** StopTimeEvent time */
-            time?: (number|Long|null);
+            time?: (Long|null);
 
             /** StopTimeEvent uncertainty */
             uncertainty?: (number|null);
@@ -501,7 +501,7 @@ export namespace transit_realtime {
             public delay: number;
 
             /** StopTimeEvent time. */
-            public time: (number|Long);
+            public time: Long;
 
             /** StopTimeEvent uncertainty. */
             public uncertainty: number;
@@ -724,7 +724,7 @@ export namespace transit_realtime {
         currentStatus?: (transit_realtime.VehiclePosition.VehicleStopStatus|null);
 
         /** VehiclePosition timestamp */
-        timestamp?: (number|Long|null);
+        timestamp?: (Long|null);
 
         /** VehiclePosition congestionLevel */
         congestionLevel?: (transit_realtime.VehiclePosition.CongestionLevel|null);
@@ -761,7 +761,7 @@ export namespace transit_realtime {
         public currentStatus: transit_realtime.VehiclePosition.VehicleStopStatus;
 
         /** VehiclePosition timestamp. */
-        public timestamp: (number|Long);
+        public timestamp: Long;
 
         /** VehiclePosition congestionLevel. */
         public congestionLevel: transit_realtime.VehiclePosition.CongestionLevel;
@@ -1032,10 +1032,10 @@ export namespace transit_realtime {
     interface ITimeRange {
 
         /** TimeRange start */
-        start?: (number|Long|null);
+        start?: (Long|null);
 
         /** TimeRange end */
-        end?: (number|Long|null);
+        end?: (Long|null);
     }
 
     /** Represents a TimeRange. */
@@ -1048,10 +1048,10 @@ export namespace transit_realtime {
         constructor(properties?: transit_realtime.ITimeRange);
 
         /** TimeRange start. */
-        public start: (number|Long);
+        public start: Long;
 
         /** TimeRange end. */
-        public end: (number|Long);
+        public end: Long;
 
         /**
          * Creates a new TimeRange instance using the specified properties.

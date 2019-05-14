@@ -1,7 +1,7 @@
 {
   "name": "gtfs-rb",
   "description": "Generated JavaScript library based on the GTFS Realtime protocol buffer specification",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "main": "exports.js",
   "scripts": {
     "build": "node build.js"

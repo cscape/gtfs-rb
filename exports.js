@@ -298,7 +298,7 @@ $root.transit_realtime = (function() {
          * @interface IFeedHeader
          * @property {string} gtfsRealtimeVersion FeedHeader gtfsRealtimeVersion
          * @property {transit_realtime.FeedHeader.Incrementality|null} [incrementality] FeedHeader incrementality
-         * @property {number|Long|null} [timestamp] FeedHeader timestamp
+         * @property {Long|null} [timestamp] FeedHeader timestamp
          */
 
         /**
@@ -334,7 +334,7 @@ $root.transit_realtime = (function() {
 
         /**
          * FeedHeader timestamp.
-         * @member {number|Long} timestamp
+         * @member {Long} timestamp
          * @memberof transit_realtime.FeedHeader
          * @instance
          */
@@ -863,7 +863,7 @@ $root.transit_realtime = (function() {
          * @property {transit_realtime.ITripDescriptor} trip TripUpdate trip
          * @property {transit_realtime.IVehicleDescriptor|null} [vehicle] TripUpdate vehicle
          * @property {Array.<transit_realtime.TripUpdate.IStopTimeUpdate>|null} [stopTimeUpdate] TripUpdate stopTimeUpdate
-         * @property {number|Long|null} [timestamp] TripUpdate timestamp
+         * @property {Long|null} [timestamp] TripUpdate timestamp
          * @property {number|null} [delay] TripUpdate delay
          */
 
@@ -909,7 +909,7 @@ $root.transit_realtime = (function() {
 
         /**
          * TripUpdate timestamp.
-         * @member {number|Long} timestamp
+         * @member {Long} timestamp
          * @memberof transit_realtime.TripUpdate
          * @instance
          */
@@ -1181,7 +1181,7 @@ $root.transit_realtime = (function() {
              * @memberof transit_realtime.TripUpdate
              * @interface IStopTimeEvent
              * @property {number|null} [delay] StopTimeEvent delay
-             * @property {number|Long|null} [time] StopTimeEvent time
+             * @property {Long|null} [time] StopTimeEvent time
              * @property {number|null} [uncertainty] StopTimeEvent uncertainty
              */
 
@@ -1210,7 +1210,7 @@ $root.transit_realtime = (function() {
 
             /**
              * StopTimeEvent time.
-             * @member {number|Long} time
+             * @member {Long} time
              * @memberof transit_realtime.TripUpdate.StopTimeEvent
              * @instance
              */
@@ -1755,7 +1755,7 @@ $root.transit_realtime = (function() {
          * @property {number|null} [currentStopSequence] VehiclePosition currentStopSequence
          * @property {string|null} [stopId] VehiclePosition stopId
          * @property {transit_realtime.VehiclePosition.VehicleStopStatus|null} [currentStatus] VehiclePosition currentStatus
-         * @property {number|Long|null} [timestamp] VehiclePosition timestamp
+         * @property {Long|null} [timestamp] VehiclePosition timestamp
          * @property {transit_realtime.VehiclePosition.CongestionLevel|null} [congestionLevel] VehiclePosition congestionLevel
          * @property {transit_realtime.VehiclePosition.OccupancyStatus|null} [occupancyStatus] VehiclePosition occupancyStatus
          */
@@ -1825,7 +1825,7 @@ $root.transit_realtime = (function() {
 
         /**
          * VehiclePosition timestamp.
-         * @member {number|Long} timestamp
+         * @member {Long} timestamp
          * @memberof transit_realtime.VehiclePosition
          * @instance
          */
@@ -2838,8 +2838,8 @@ $root.transit_realtime = (function() {
          * Properties of a TimeRange.
          * @memberof transit_realtime
          * @interface ITimeRange
-         * @property {number|Long|null} [start] TimeRange start
-         * @property {number|Long|null} [end] TimeRange end
+         * @property {Long|null} [start] TimeRange start
+         * @property {Long|null} [end] TimeRange end
          */
 
         /**
@@ -2859,7 +2859,7 @@ $root.transit_realtime = (function() {
 
         /**
          * TimeRange start.
-         * @member {number|Long} start
+         * @member {Long} start
          * @memberof transit_realtime.TimeRange
          * @instance
          */
@@ -2867,7 +2867,7 @@ $root.transit_realtime = (function() {
 
         /**
          * TimeRange end.
-         * @member {number|Long} end
+         * @member {Long} end
          * @memberof transit_realtime.TimeRange
          * @instance
          */
